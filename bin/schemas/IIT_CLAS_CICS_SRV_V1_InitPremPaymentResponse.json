@@ -1,0 +1,825 @@
+{
+  "type" : "object",
+  "properties" : {
+    "NCWM0670" : {
+      "type" : "object",
+      "properties" : {
+        "MIR_MAP_INTERFACE" : {
+          "type" : "object",
+          "properties" : {
+            "MIR_LENGTH" : {
+              "minimum" : -9999,
+              "maximum" : 9999,
+              "type" : "integer"
+            },
+            "MTPI_PARMS" : {
+              "type" : "object",
+              "properties" : {
+                "MTPI_CURSOR_POS" : {
+                  "minimum" : -9999,
+                  "maximum" : 9999,
+                  "type" : "integer"
+                },
+                "MTPI_TRANSACTION_ID" : {
+                  "maxLength" : 4,
+                  "type" : "string"
+                },
+                "MTPI_PROGRAM_ID" : {
+                  "maxLength" : 8,
+                  "type" : "string"
+                },
+                "MTPI_APPL_ID" : {
+                  "maxLength" : 2,
+                  "type" : "string"
+                },
+                "MTPI_COMPANY_CODE" : {
+                  "maxLength" : 2,
+                  "type" : "string"
+                },
+                "MTPI_COUNTRY_CODE" : {
+                  "maxLength" : 2,
+                  "type" : "string"
+                },
+                "MTPI_CURRENCY_CODE" : {
+                  "maxLength" : 2,
+                  "type" : "string"
+                },
+                "MTPI_PROCESS_DATE" : {
+                  "maxLength" : 10,
+                  "type" : "string"
+                },
+                "MTPI_EDIT_LANG" : {
+                  "maxLength" : 1,
+                  "type" : "string"
+                },
+                "MTPI_USER_LANG" : {
+                  "maxLength" : 1,
+                  "type" : "string"
+                },
+                "MTPI_USER_SECURITY" : {
+                  "maxLength" : 50,
+                  "type" : "string"
+                },
+                "MTPI_SESSION_IND" : {
+                  "maxLength" : 1,
+                  "type" : "string"
+                },
+                "MTPI_MAP_SCREEN_NO" : {
+                  "maxLength" : 1,
+                  "type" : "string"
+                },
+                "MTPI_PROCESS_PCL_IND" : {
+                  "maxLength" : 1,
+                  "type" : "string"
+                },
+                "MTPI_PCL_CURR_ENTRY" : {
+                  "minimum" : -9999,
+                  "maximum" : 9999,
+                  "type" : "integer"
+                },
+                "MTPI_PCL_MAX_ENTRY" : {
+                  "minimum" : -9999,
+                  "maximum" : 9999,
+                  "type" : "integer"
+                },
+                "MTPI_PCL_NEXT_ENTRY_ID" : {
+                  "maxLength" : 4,
+                  "type" : "string"
+                },
+                "MTPI_CMD_LINE" : {
+                  "maxLength" : 10,
+                  "type" : "string"
+                },
+                "MTPI_APPL_WORK_AREA" : {
+                  "maxLength" : 300,
+                  "type" : "string"
+                },
+                "MTPI_USER_ID" : {
+                  "maxLength" : 8,
+                  "type" : "string"
+                },
+                "MTPI_USER_SEC_CLASS" : {
+                  "maxLength" : 10,
+                  "type" : "string"
+                },
+                "MTPI_TERMINAL_ID" : {
+                  "maxLength" : 4,
+                  "type" : "string"
+                },
+                "MTPI_SYSTEM_DATE" : {
+                  "multipleOf" : 1,
+                  "minimum" : -9999999,
+                  "maximum" : 9999999,
+                  "type" : "number",
+                  "format" : "decimal"
+                },
+                "MTPI_SYSTEM_TIME" : {
+                  "multipleOf" : 1,
+                  "minimum" : -9999999,
+                  "maximum" : 9999999,
+                  "type" : "number",
+                  "format" : "decimal"
+                },
+                "MTPI_SYSTEM_DATE_INT" : {
+                  "maxLength" : 10,
+                  "type" : "string"
+                },
+                "MTPI_USER_MSGE_CLASS" : {
+                  "maxLength" : 1,
+                  "type" : "string"
+                },
+                "MTPI_USER_CON_IND" : {
+                  "maxLength" : 1,
+                  "type" : "string"
+                },
+                "MTPI_USER_LEVEL_IND" : {
+                  "maxLength" : 1,
+                  "type" : "string"
+                },
+                "MTPI_USER_BRANCH_CODE" : {
+                  "maxLength" : 5,
+                  "type" : "string"
+                },
+                "MTPI_TASK_ID" : {
+                  "maxLength" : 4,
+                  "type" : "string"
+                },
+                "MTPI_USER_RPT_DSTRB_CD" : {
+                  "maxLength" : 5,
+                  "type" : "string"
+                },
+                "MTPI_USER_SESN_BTCH_NUM" : {
+                  "multipleOf" : 1,
+                  "minimum" : -9999999,
+                  "maximum" : 9999999,
+                  "type" : "number",
+                  "format" : "decimal"
+                },
+                "MTPI_TIMES_THRU_IND" : {
+                  "maxLength" : 1,
+                  "type" : "string"
+                },
+                "MTPI_SEND_MAP_IND" : {
+                  "maxLength" : 1,
+                  "type" : "string"
+                },
+                "MTPI_CURSOR_POS_IND" : {
+                  "maxLength" : 1,
+                  "type" : "string"
+                }
+              }
+            },
+            "MIR_MSGE_DATA" : {
+              "type" : "object",
+              "properties" : {
+                "MIR_MSGE_MAX_LINES" : {
+                  "minimum" : -9999,
+                  "maximum" : 9999,
+                  "type" : "integer"
+                },
+                "MIR_MSGE_LINES_USED" : {
+                  "minimum" : -9999,
+                  "maximum" : 9999,
+                  "type" : "integer"
+                }
+              }
+            },
+            "MIR_SCREEN_1" : {
+              "type" : "object",
+              "properties" : {
+                "MIR_SCREEN_1_FIELDS" : {
+                  "type" : "object",
+                  "properties" : {
+                    "MIR_TRNID" : {
+                      "maxLength" : 4,
+                      "type" : "string"
+                    },
+                    "MIR_FORCE" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_HDG" : {
+                      "maxLength" : 35,
+                      "type" : "string"
+                    },
+                    "MIR_MSFLDA" : {
+                      "maxLength" : 8,
+                      "type" : "string"
+                    },
+                    "MIR_MSFLDB" : {
+                      "maxLength" : 8,
+                      "type" : "string"
+                    },
+                    "MIR_CMD" : {
+                      "maxLength" : 64,
+                      "type" : "string"
+                    },
+                    "MIR_MSGE_TABLE" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_MSGE_T" : {
+                          "type" : "array",
+                          "maxItems" : 3,
+                          "minItems" : 3,
+                          "items" : {
+                            "maxLength" : 79,
+                            "type" : "string"
+                          }
+                        }
+                      }
+                    },
+                    "MIR_IPAYE" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_VERFY" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_LABEL" : {
+                      "maxLength" : 25,
+                      "type" : "string"
+                    },
+                    "MIR_ONAME" : {
+                      "maxLength" : 51,
+                      "type" : "string"
+                    },
+                    "MIR_ACDES" : {
+                      "maxLength" : 20,
+                      "type" : "string"
+                    },
+                    "MIR_IPYMT" : {
+                      "maxLength" : 10,
+                      "type" : "string"
+                    },
+                    "MIR_TIAID" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_EFFDT" : {
+                      "maxLength" : 9,
+                      "type" : "string"
+                    },
+                    "MIR_RREAS" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_COMIN" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_REGIN" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_POLNO" : {
+                      "maxLength" : 9,
+                      "type" : "string"
+                    },
+                    "MIR_POLSF" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_MSCSP" : {
+                      "maxLength" : 11,
+                      "type" : "string"
+                    },
+                    "MIR_PDFBL" : {
+                      "maxLength" : 11,
+                      "type" : "string"
+                    },
+                    "MIR_DPOPT" : {
+                      "maxLength" : 11,
+                      "type" : "string"
+                    },
+                    "MIR_ESUSP" : {
+                      "maxLength" : 11,
+                      "type" : "string"
+                    },
+                    "MIR_OSSURR" : {
+                      "maxLength" : 11,
+                      "type" : "string"
+                    },
+                    "MIR_OSDTH" : {
+                      "maxLength" : 11,
+                      "type" : "string"
+                    },
+                    "MIR_OSMAT" : {
+                      "maxLength" : 11,
+                      "type" : "string"
+                    },
+                    "MIR_OSOTHR" : {
+                      "maxLength" : 11,
+                      "type" : "string"
+                    },
+                    "MIR_ACCNO_TABLE" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_ACCNO_T" : {
+                          "type" : "array",
+                          "maxItems" : 2,
+                          "minItems" : 2,
+                          "items" : {
+                            "maxLength" : 8,
+                            "type" : "string"
+                          }
+                        }
+                      }
+                    },
+                    "MIR_REPNO_TABLE" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_REPNO_T" : {
+                          "type" : "array",
+                          "maxItems" : 2,
+                          "minItems" : 2,
+                          "items" : {
+                            "maxLength" : 7,
+                            "type" : "string"
+                          }
+                        }
+                      }
+                    },
+                    "MIR_DBAMT_TABLE" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_DBAMT_T" : {
+                          "type" : "array",
+                          "maxItems" : 2,
+                          "minItems" : 2,
+                          "items" : {
+                            "maxLength" : 10,
+                            "type" : "string"
+                          }
+                        }
+                      }
+                    },
+                    "MIR_CRAMT_TABLE" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_CRAMT_T" : {
+                          "type" : "array",
+                          "maxItems" : 2,
+                          "minItems" : 2,
+                          "items" : {
+                            "maxLength" : 10,
+                            "type" : "string"
+                          }
+                        }
+                      }
+                    },
+                    "MIR_PFKY_TABLE" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_PFKY_T" : {
+                          "type" : "array",
+                          "maxItems" : 12,
+                          "minItems" : 12,
+                          "items" : {
+                            "maxLength" : 4,
+                            "type" : "string"
+                          }
+                        }
+                      }
+                    },
+                    "FILL_0" : {
+                      "maxLength" : 101,
+                      "type" : "string"
+                    }
+                  }
+                },
+                "MIR_SCREEN_1_ATTRB" : {
+                  "type" : "object",
+                  "properties" : {
+                    "MIR_TRNID_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_FORCE_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_HDG_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_MSFLDA_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_MSFLDB_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_CMD_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_MSGE_TABLE_A" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_MSGE_T_A" : {
+                          "type" : "array",
+                          "maxItems" : 3,
+                          "minItems" : 3,
+                          "items" : {
+                            "maxLength" : 1,
+                            "type" : "string"
+                          }
+                        }
+                      }
+                    },
+                    "MIR_IPAYE_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_VERFY_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_LABEL_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_ONAME_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_ACDES_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_IPYMT_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_TIAID_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_EFFDT_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_RREAS_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_COMIN_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_REGIN_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_POLNO_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_POLSF_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_MSCSP_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_PDFBL_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_DPOPT_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_ESUSP_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_OSSURR_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_OSDTH_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_OSMAT_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_OSOTHR_A" : {
+                      "maxLength" : 1,
+                      "type" : "string"
+                    },
+                    "MIR_ACCNO_TABLE_A" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_ACCNO_T_A" : {
+                          "type" : "array",
+                          "maxItems" : 2,
+                          "minItems" : 2,
+                          "items" : {
+                            "maxLength" : 1,
+                            "type" : "string"
+                          }
+                        }
+                      }
+                    },
+                    "MIR_REPNO_TABLE_A" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_REPNO_T_A" : {
+                          "type" : "array",
+                          "maxItems" : 2,
+                          "minItems" : 2,
+                          "items" : {
+                            "maxLength" : 1,
+                            "type" : "string"
+                          }
+                        }
+                      }
+                    },
+                    "MIR_DBAMT_TABLE_A" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_DBAMT_T_A" : {
+                          "type" : "array",
+                          "maxItems" : 2,
+                          "minItems" : 2,
+                          "items" : {
+                            "maxLength" : 1,
+                            "type" : "string"
+                          }
+                        }
+                      }
+                    },
+                    "MIR_CRAMT_TABLE_A" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_CRAMT_T_A" : {
+                          "type" : "array",
+                          "maxItems" : 2,
+                          "minItems" : 2,
+                          "items" : {
+                            "maxLength" : 1,
+                            "type" : "string"
+                          }
+                        }
+                      }
+                    },
+                    "MIR_PFKY_TABLE_A" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_PFKY_T_A" : {
+                          "type" : "array",
+                          "maxItems" : 12,
+                          "minItems" : 12,
+                          "items" : {
+                            "maxLength" : 1,
+                            "type" : "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "MIR_SCREEN_1_LENGTHS" : {
+                  "type" : "object",
+                  "properties" : {
+                    "MIR_TRNID_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_FORCE_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_HDG_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_MSFLDA_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_MSFLDB_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_CMD_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_MSGE_TABLE_L" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_MSGE_T_L" : {
+                          "type" : "array",
+                          "maxItems" : 3,
+                          "minItems" : 3,
+                          "items" : {
+                            "minimum" : -9999,
+                            "maximum" : 9999,
+                            "type" : "integer"
+                          }
+                        }
+                      }
+                    },
+                    "MIR_IPAYE_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_VERFY_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_LABEL_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_ONAME_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_ACDES_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_IPYMT_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_TIAID_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_EFFDT_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_RREAS_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_COMIN_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_REGIN_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_POLNO_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_POLSF_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_MSCSP_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_PDFBL_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_DPOPT_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_ESUSP_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_OSSURR_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_OSDTH_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_OSMAT_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_OSOTHR_L" : {
+                      "minimum" : -9999,
+                      "maximum" : 9999,
+                      "type" : "integer"
+                    },
+                    "MIR_ACCNO_TABLE_L" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_ACCNO_T_L" : {
+                          "type" : "array",
+                          "maxItems" : 2,
+                          "minItems" : 2,
+                          "items" : {
+                            "minimum" : -9999,
+                            "maximum" : 9999,
+                            "type" : "integer"
+                          }
+                        }
+                      }
+                    },
+                    "MIR_REPNO_TABLE_L" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_REPNO_T_L" : {
+                          "type" : "array",
+                          "maxItems" : 2,
+                          "minItems" : 2,
+                          "items" : {
+                            "minimum" : -9999,
+                            "maximum" : 9999,
+                            "type" : "integer"
+                          }
+                        }
+                      }
+                    },
+                    "MIR_DBAMT_TABLE_L" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_DBAMT_T_L" : {
+                          "type" : "array",
+                          "maxItems" : 2,
+                          "minItems" : 2,
+                          "items" : {
+                            "minimum" : -9999,
+                            "maximum" : 9999,
+                            "type" : "integer"
+                          }
+                        }
+                      }
+                    },
+                    "MIR_CRAMT_TABLE_L" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_CRAMT_T_L" : {
+                          "type" : "array",
+                          "maxItems" : 2,
+                          "minItems" : 2,
+                          "items" : {
+                            "minimum" : -9999,
+                            "maximum" : 9999,
+                            "type" : "integer"
+                          }
+                        }
+                      }
+                    },
+                    "MIR_PFKY_TABLE_L" : {
+                      "type" : "object",
+                      "properties" : {
+                        "MIR_PFKY_T_L" : {
+                          "type" : "array",
+                          "maxItems" : 12,
+                          "minItems" : 12,
+                          "items" : {
+                            "minimum" : -9999,
+                            "maximum" : 9999,
+                            "type" : "integer"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

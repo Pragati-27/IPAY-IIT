@@ -1,0 +1,2035 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:message xmlns:ns2="http://www.ibm.com/ims/Transaction" transactionCode="" messageName="NSOM0670_response.si" direction="0" serviceType="CICS_COMM_AREA">
+    <message id="1" name="NSOM0670_response.si">
+        <segment id="1" name="COMMAREA" originalName="COMMAREA">
+            <field name="NCWM0670" originalName="NCWM0670" included="Y" path="NCWM0670">
+                <startPos>1</startPos>
+                <bytes>1420</bytes>
+                <maxBytes>1420</maxBytes>
+                <applicationDatatype datatype="STRUCT"/>
+                <field name="MIR_MAP_INTERFACE" originalName="MIR_MAP_INTERFACE" included="Y" path="NCWM0670.MIR_MAP_INTERFACE">
+                    <startPos>1</startPos>
+                    <bytes>1420</bytes>
+                    <maxBytes>1420</maxBytes>
+                    <marshaller alignment="NATURAL"/>
+                    <applicationDatatype datatype="STRUCT"/>
+                    <field name="MIR_LENGTH" originalName="MIR_LENGTH" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_LENGTH">
+                        <startPos>1</startPos>
+                        <bytes>2</bytes>
+                        <maxBytes>2</maxBytes>
+                        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+                        <applicationDatatype datatype="SHORT" precision="4"/>
+                    </field>
+                    <field name="MTPI_PARMS" originalName="MTPI_PARMS" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS">
+                        <startPos>3</startPos>
+                        <bytes>469</bytes>
+                        <maxBytes>469</maxBytes>
+                        <marshaller alignment="NATURAL"/>
+                        <applicationDatatype datatype="STRUCT"/>
+                        <field name="MTPI_CURSOR_POS" originalName="MTPI_CURSOR_POS" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_CURSOR_POS">
+                            <startPos>3</startPos>
+                            <bytes>2</bytes>
+                            <maxBytes>2</maxBytes>
+                            <marshaller isNativeInteger="N" alignment="NATURAL"/>
+                            <applicationDatatype datatype="SHORT" precision="4"/>
+                        </field>
+                        <field name="MTPI_TRANSACTION_ID" originalName="MTPI_TRANSACTION_ID" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_TRANSACTION_ID">
+                            <startPos>5</startPos>
+                            <bytes>4</bytes>
+                            <maxBytes>4</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_PROGRAM_ID" originalName="MTPI_PROGRAM_ID" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_PROGRAM_ID">
+                            <startPos>9</startPos>
+                            <bytes>8</bytes>
+                            <maxBytes>8</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_APPL_ID" originalName="MTPI_APPL_ID" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_APPL_ID">
+                            <startPos>17</startPos>
+                            <bytes>2</bytes>
+                            <maxBytes>2</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_COMPANY_CODE" originalName="MTPI_COMPANY_CODE" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_COMPANY_CODE">
+                            <startPos>19</startPos>
+                            <bytes>2</bytes>
+                            <maxBytes>2</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_COUNTRY_CODE" originalName="MTPI_COUNTRY_CODE" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_COUNTRY_CODE">
+                            <startPos>21</startPos>
+                            <bytes>2</bytes>
+                            <maxBytes>2</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_CURRENCY_CODE" originalName="MTPI_CURRENCY_CODE" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_CURRENCY_CODE">
+                            <startPos>23</startPos>
+                            <bytes>2</bytes>
+                            <maxBytes>2</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_PROCESS_DATE" originalName="MTPI_PROCESS_DATE" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_PROCESS_DATE">
+                            <startPos>25</startPos>
+                            <bytes>10</bytes>
+                            <maxBytes>10</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_EDIT_LANG" originalName="MTPI_EDIT_LANG" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_EDIT_LANG">
+                            <startPos>35</startPos>
+                            <bytes>1</bytes>
+                            <maxBytes>1</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_USER_LANG" originalName="MTPI_USER_LANG" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_USER_LANG">
+                            <startPos>36</startPos>
+                            <bytes>1</bytes>
+                            <maxBytes>1</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_USER_SECURITY" originalName="MTPI_USER_SECURITY" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_USER_SECURITY">
+                            <startPos>37</startPos>
+                            <bytes>50</bytes>
+                            <maxBytes>50</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_SESSION_IND" originalName="MTPI_SESSION_IND" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_SESSION_IND">
+                            <startPos>87</startPos>
+                            <bytes>1</bytes>
+                            <maxBytes>1</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_MAP_SCREEN_NO" originalName="MTPI_MAP_SCREEN_NO" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_MAP_SCREEN_NO">
+                            <startPos>88</startPos>
+                            <bytes>1</bytes>
+                            <maxBytes>1</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_PROCESS_PCL_IND" originalName="MTPI_PROCESS_PCL_IND" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_PROCESS_PCL_IND">
+                            <startPos>89</startPos>
+                            <bytes>1</bytes>
+                            <maxBytes>1</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_PCL_CURR_ENTRY" originalName="MTPI_PCL_CURR_ENTRY" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_PCL_CURR_ENTRY">
+                            <startPos>90</startPos>
+                            <bytes>2</bytes>
+                            <maxBytes>2</maxBytes>
+                            <marshaller isNativeInteger="N" alignment="NATURAL"/>
+                            <applicationDatatype datatype="SHORT" precision="4"/>
+                        </field>
+                        <field name="MTPI_PCL_MAX_ENTRY" originalName="MTPI_PCL_MAX_ENTRY" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_PCL_MAX_ENTRY">
+                            <startPos>92</startPos>
+                            <bytes>2</bytes>
+                            <maxBytes>2</maxBytes>
+                            <marshaller isNativeInteger="N" alignment="NATURAL"/>
+                            <applicationDatatype datatype="SHORT" precision="4"/>
+                        </field>
+                        <field name="MTPI_PCL_NEXT_ENTRY_ID" originalName="MTPI_PCL_NEXT_ENTRY_ID" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_PCL_NEXT_ENTRY_ID">
+                            <startPos>94</startPos>
+                            <bytes>4</bytes>
+                            <maxBytes>4</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_CMD_LINE" originalName="MTPI_CMD_LINE" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_CMD_LINE">
+                            <startPos>98</startPos>
+                            <bytes>10</bytes>
+                            <maxBytes>10</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_APPL_WORK_AREA" originalName="MTPI_APPL_WORK_AREA" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_APPL_WORK_AREA">
+                            <startPos>108</startPos>
+                            <bytes>300</bytes>
+                            <maxBytes>300</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_USER_ID" originalName="MTPI_USER_ID" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_USER_ID">
+                            <startPos>408</startPos>
+                            <bytes>8</bytes>
+                            <maxBytes>8</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_USER_SEC_CLASS" originalName="MTPI_USER_SEC_CLASS" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_USER_SEC_CLASS">
+                            <startPos>416</startPos>
+                            <bytes>10</bytes>
+                            <maxBytes>10</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_TERMINAL_ID" originalName="MTPI_TERMINAL_ID" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_TERMINAL_ID">
+                            <startPos>426</startPos>
+                            <bytes>4</bytes>
+                            <maxBytes>4</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_SYSTEM_DATE" originalName="MTPI_SYSTEM_DATE" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_SYSTEM_DATE">
+                            <startPos>430</startPos>
+                            <bytes>4</bytes>
+                            <maxBytes>4</maxBytes>
+                            <marshaller isSigned="Y">
+<typeConverter>PACKEDDECIMAL</typeConverter>
+                            </marshaller>
+                            <applicationDatatype datatype="DECIMAL" precision="7" scale="0"/>
+                        </field>
+                        <field name="MTPI_SYSTEM_TIME" originalName="MTPI_SYSTEM_TIME" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_SYSTEM_TIME">
+                            <startPos>434</startPos>
+                            <bytes>4</bytes>
+                            <maxBytes>4</maxBytes>
+                            <marshaller isSigned="Y">
+<typeConverter>PACKEDDECIMAL</typeConverter>
+                            </marshaller>
+                            <applicationDatatype datatype="DECIMAL" precision="7" scale="0"/>
+                        </field>
+                        <field name="MTPI_SYSTEM_DATE_INT" originalName="MTPI_SYSTEM_DATE_INT" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_SYSTEM_DATE_INT">
+                            <startPos>438</startPos>
+                            <bytes>10</bytes>
+                            <maxBytes>10</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_USER_MSGE_CLASS" originalName="MTPI_USER_MSGE_CLASS" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_USER_MSGE_CLASS">
+                            <startPos>448</startPos>
+                            <bytes>1</bytes>
+                            <maxBytes>1</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_USER_CON_IND" originalName="MTPI_USER_CON_IND" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_USER_CON_IND">
+                            <startPos>449</startPos>
+                            <bytes>1</bytes>
+                            <maxBytes>1</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_USER_LEVEL_IND" originalName="MTPI_USER_LEVEL_IND" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_USER_LEVEL_IND">
+                            <startPos>450</startPos>
+                            <bytes>1</bytes>
+                            <maxBytes>1</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_USER_BRANCH_CODE" originalName="MTPI_USER_BRANCH_CODE" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_USER_BRANCH_CODE">
+                            <startPos>451</startPos>
+                            <bytes>5</bytes>
+                            <maxBytes>5</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_TASK_ID" originalName="MTPI_TASK_ID" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_TASK_ID">
+                            <startPos>456</startPos>
+                            <bytes>4</bytes>
+                            <maxBytes>4</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_USER_RPT_DSTRB_CD" originalName="MTPI_USER_RPT_DSTRB_CD" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_USER_RPT_DSTRB_CD">
+                            <startPos>460</startPos>
+                            <bytes>5</bytes>
+                            <maxBytes>5</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_USER_SESN_BTCH_NUM" originalName="MTPI_USER_SESN_BTCH_NUM" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_USER_SESN_BTCH_NUM">
+                            <startPos>465</startPos>
+                            <bytes>4</bytes>
+                            <maxBytes>4</maxBytes>
+                            <marshaller isSigned="Y">
+<typeConverter>PACKEDDECIMAL</typeConverter>
+                            </marshaller>
+                            <applicationDatatype datatype="DECIMAL" precision="7" scale="0"/>
+                        </field>
+                        <field name="MTPI_TIMES_THRU_IND" originalName="MTPI_TIMES_THRU_IND" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_TIMES_THRU_IND">
+                            <startPos>469</startPos>
+                            <bytes>1</bytes>
+                            <maxBytes>1</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_SEND_MAP_IND" originalName="MTPI_SEND_MAP_IND" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_SEND_MAP_IND">
+                            <startPos>470</startPos>
+                            <bytes>1</bytes>
+                            <maxBytes>1</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="MTPI_CURSOR_POS_IND" originalName="MTPI_CURSOR_POS_IND" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_CURSOR_POS_IND">
+                            <startPos>471</startPos>
+                            <bytes>1</bytes>
+                            <maxBytes>1</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                    </field>
+                    <field name="MIR_MSGE_DATA" originalName="MIR_MSGE_DATA" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_MSGE_DATA">
+                        <startPos>472</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <marshaller alignment="NATURAL"/>
+                        <applicationDatatype datatype="STRUCT"/>
+                        <field name="MIR_MSGE_MAX_LINES" originalName="MIR_MSGE_MAX_LINES" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_MSGE_DATA.MIR_MSGE_MAX_LINES">
+                            <startPos>472</startPos>
+                            <bytes>2</bytes>
+                            <maxBytes>2</maxBytes>
+                            <marshaller isNativeInteger="N" alignment="NATURAL"/>
+                            <applicationDatatype datatype="SHORT" precision="4"/>
+                        </field>
+                        <field name="MIR_MSGE_LINES_USED" originalName="MIR_MSGE_LINES_USED" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_MSGE_DATA.MIR_MSGE_LINES_USED">
+                            <startPos>474</startPos>
+                            <bytes>2</bytes>
+                            <maxBytes>2</maxBytes>
+                            <marshaller isNativeInteger="N" alignment="NATURAL"/>
+                            <applicationDatatype datatype="SHORT" precision="4"/>
+                        </field>
+                    </field>
+                    <field name="MIR_SCREEN_1" originalName="MIR_SCREEN_1" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1">
+                        <startPos>476</startPos>
+                        <bytes>945</bytes>
+                        <maxBytes>945</maxBytes>
+                        <applicationDatatype datatype="STRUCT"/>
+                        <field name="MIR_SCREEN_1_FIELDS" originalName="MIR_SCREEN_1_FIELDS" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS">
+                            <startPos>476</startPos>
+                            <bytes>795</bytes>
+                            <maxBytes>795</maxBytes>
+                            <applicationDatatype datatype="STRUCT"/>
+                            <field name="MIR_TRNID" originalName="MIR_TRNID" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_TRNID">
+<startPos>476</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_FORCE" originalName="MIR_FORCE" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_FORCE">
+<startPos>480</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_HDG" originalName="MIR_HDG" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_HDG">
+<startPos>481</startPos>
+<bytes>35</bytes>
+<maxBytes>35</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_MSFLDA" originalName="MIR_MSFLDA" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_MSFLDA">
+<startPos>516</startPos>
+<bytes>8</bytes>
+<maxBytes>8</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_MSFLDB" originalName="MIR_MSFLDB" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_MSFLDB">
+<startPos>524</startPos>
+<bytes>8</bytes>
+<maxBytes>8</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_CMD" originalName="MIR_CMD" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_CMD">
+<startPos>532</startPos>
+<bytes>64</bytes>
+<maxBytes>64</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_MSGE_TABLE" originalName="MIR_MSGE_TABLE" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_MSGE_TABLE">
+<startPos>596</startPos>
+<bytes>237</bytes>
+<maxBytes>237</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_MSGE_T" originalName="MIR_MSGE_T" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_MSGE_TABLE.MIR_MSGE_T" minOccurs="3" maxOccurs="3">
+    <startPos>596</startPos>
+    <bytes>237</bytes>
+    <maxBytes>237</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_MSGE_T_SUB" included="Y">
+        <bytes>79</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_IPAYE" originalName="MIR_IPAYE" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_IPAYE">
+<startPos>833</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_VERFY" originalName="MIR_VERFY" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_VERFY">
+<startPos>834</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_LABEL" originalName="MIR_LABEL" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_LABEL">
+<startPos>835</startPos>
+<bytes>25</bytes>
+<maxBytes>25</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_ONAME" originalName="MIR_ONAME" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_ONAME">
+<startPos>860</startPos>
+<bytes>51</bytes>
+<maxBytes>51</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_ACDES" originalName="MIR_ACDES" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_ACDES">
+<startPos>911</startPos>
+<bytes>20</bytes>
+<maxBytes>20</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_IPYMT" originalName="MIR_IPYMT" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_IPYMT">
+<startPos>931</startPos>
+<bytes>10</bytes>
+<maxBytes>10</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_TIAID" originalName="MIR_TIAID" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_TIAID">
+<startPos>941</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_EFFDT" originalName="MIR_EFFDT" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_EFFDT">
+<startPos>942</startPos>
+<bytes>9</bytes>
+<maxBytes>9</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_RREAS" originalName="MIR_RREAS" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_RREAS">
+<startPos>951</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_COMIN" originalName="MIR_COMIN" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_COMIN">
+<startPos>952</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_REGIN" originalName="MIR_REGIN" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_REGIN">
+<startPos>953</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_POLNO" originalName="MIR_POLNO" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_POLNO">
+<startPos>954</startPos>
+<bytes>9</bytes>
+<maxBytes>9</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_POLSF" originalName="MIR_POLSF" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_POLSF">
+<startPos>963</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_MSCSP" originalName="MIR_MSCSP" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_MSCSP">
+<startPos>964</startPos>
+<bytes>11</bytes>
+<maxBytes>11</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_PDFBL" originalName="MIR_PDFBL" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_PDFBL">
+<startPos>975</startPos>
+<bytes>11</bytes>
+<maxBytes>11</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_DPOPT" originalName="MIR_DPOPT" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_DPOPT">
+<startPos>986</startPos>
+<bytes>11</bytes>
+<maxBytes>11</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_ESUSP" originalName="MIR_ESUSP" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_ESUSP">
+<startPos>997</startPos>
+<bytes>11</bytes>
+<maxBytes>11</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_OSSURR" originalName="MIR_OSSURR" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_OSSURR">
+<startPos>1008</startPos>
+<bytes>11</bytes>
+<maxBytes>11</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_OSDTH" originalName="MIR_OSDTH" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_OSDTH">
+<startPos>1019</startPos>
+<bytes>11</bytes>
+<maxBytes>11</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_OSMAT" originalName="MIR_OSMAT" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_OSMAT">
+<startPos>1030</startPos>
+<bytes>11</bytes>
+<maxBytes>11</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_OSOTHR" originalName="MIR_OSOTHR" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_OSOTHR">
+<startPos>1041</startPos>
+<bytes>11</bytes>
+<maxBytes>11</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_ACCNO_TABLE" originalName="MIR_ACCNO_TABLE" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_ACCNO_TABLE">
+<startPos>1052</startPos>
+<bytes>16</bytes>
+<maxBytes>16</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_ACCNO_T" originalName="MIR_ACCNO_T" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_ACCNO_TABLE.MIR_ACCNO_T" minOccurs="2" maxOccurs="2">
+    <startPos>1052</startPos>
+    <bytes>16</bytes>
+    <maxBytes>16</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_ACCNO_T_SUB" included="Y">
+        <bytes>8</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_REPNO_TABLE" originalName="MIR_REPNO_TABLE" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_REPNO_TABLE">
+<startPos>1068</startPos>
+<bytes>14</bytes>
+<maxBytes>14</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_REPNO_T" originalName="MIR_REPNO_T" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_REPNO_TABLE.MIR_REPNO_T" minOccurs="2" maxOccurs="2">
+    <startPos>1068</startPos>
+    <bytes>14</bytes>
+    <maxBytes>14</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_REPNO_T_SUB" included="Y">
+        <bytes>7</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_DBAMT_TABLE" originalName="MIR_DBAMT_TABLE" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_DBAMT_TABLE">
+<startPos>1082</startPos>
+<bytes>20</bytes>
+<maxBytes>20</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_DBAMT_T" originalName="MIR_DBAMT_T" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_DBAMT_TABLE.MIR_DBAMT_T" minOccurs="2" maxOccurs="2">
+    <startPos>1082</startPos>
+    <bytes>20</bytes>
+    <maxBytes>20</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_DBAMT_T_SUB" included="Y">
+        <bytes>10</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_CRAMT_TABLE" originalName="MIR_CRAMT_TABLE" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_CRAMT_TABLE">
+<startPos>1102</startPos>
+<bytes>20</bytes>
+<maxBytes>20</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_CRAMT_T" originalName="MIR_CRAMT_T" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_CRAMT_TABLE.MIR_CRAMT_T" minOccurs="2" maxOccurs="2">
+    <startPos>1102</startPos>
+    <bytes>20</bytes>
+    <maxBytes>20</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_CRAMT_T_SUB" included="Y">
+        <bytes>10</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_PFKY_TABLE" originalName="MIR_PFKY_TABLE" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_PFKY_TABLE">
+<startPos>1122</startPos>
+<bytes>48</bytes>
+<maxBytes>48</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_PFKY_T" originalName="MIR_PFKY_T" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.MIR_PFKY_TABLE.MIR_PFKY_T" minOccurs="12" maxOccurs="12">
+    <startPos>1122</startPos>
+    <bytes>48</bytes>
+    <maxBytes>48</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_PFKY_T_SUB" included="Y">
+        <bytes>4</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="FILL_0" originalName="FILL_0" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_FIELDS.FILL_0">
+<startPos>1170</startPos>
+<bytes>101</bytes>
+<maxBytes>101</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                        </field>
+                        <field name="MIR_SCREEN_1_ATTRB" originalName="MIR_SCREEN_1_ATTRB" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB">
+                            <startPos>1271</startPos>
+                            <bytes>50</bytes>
+                            <maxBytes>50</maxBytes>
+                            <applicationDatatype datatype="STRUCT"/>
+                            <field name="MIR_TRNID_A" originalName="MIR_TRNID_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_TRNID_A">
+<startPos>1271</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_FORCE_A" originalName="MIR_FORCE_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_FORCE_A">
+<startPos>1272</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_HDG_A" originalName="MIR_HDG_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_HDG_A">
+<startPos>1273</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_MSFLDA_A" originalName="MIR_MSFLDA_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_MSFLDA_A">
+<startPos>1274</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_MSFLDB_A" originalName="MIR_MSFLDB_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_MSFLDB_A">
+<startPos>1275</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_CMD_A" originalName="MIR_CMD_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_CMD_A">
+<startPos>1276</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_MSGE_TABLE_A" originalName="MIR_MSGE_TABLE_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_MSGE_TABLE_A">
+<startPos>1277</startPos>
+<bytes>3</bytes>
+<maxBytes>3</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_MSGE_T_A" originalName="MIR_MSGE_T_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_MSGE_TABLE_A.MIR_MSGE_T_A" minOccurs="3" maxOccurs="3">
+    <startPos>1277</startPos>
+    <bytes>3</bytes>
+    <maxBytes>3</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_MSGE_T_A_SUB" included="Y">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_IPAYE_A" originalName="MIR_IPAYE_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_IPAYE_A">
+<startPos>1280</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_VERFY_A" originalName="MIR_VERFY_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_VERFY_A">
+<startPos>1281</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_LABEL_A" originalName="MIR_LABEL_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_LABEL_A">
+<startPos>1282</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_ONAME_A" originalName="MIR_ONAME_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_ONAME_A">
+<startPos>1283</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_ACDES_A" originalName="MIR_ACDES_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_ACDES_A">
+<startPos>1284</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_IPYMT_A" originalName="MIR_IPYMT_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_IPYMT_A">
+<startPos>1285</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_TIAID_A" originalName="MIR_TIAID_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_TIAID_A">
+<startPos>1286</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_EFFDT_A" originalName="MIR_EFFDT_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_EFFDT_A">
+<startPos>1287</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_RREAS_A" originalName="MIR_RREAS_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_RREAS_A">
+<startPos>1288</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_COMIN_A" originalName="MIR_COMIN_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_COMIN_A">
+<startPos>1289</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_REGIN_A" originalName="MIR_REGIN_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_REGIN_A">
+<startPos>1290</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_POLNO_A" originalName="MIR_POLNO_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_POLNO_A">
+<startPos>1291</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_POLSF_A" originalName="MIR_POLSF_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_POLSF_A">
+<startPos>1292</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_MSCSP_A" originalName="MIR_MSCSP_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_MSCSP_A">
+<startPos>1293</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_PDFBL_A" originalName="MIR_PDFBL_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_PDFBL_A">
+<startPos>1294</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_DPOPT_A" originalName="MIR_DPOPT_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_DPOPT_A">
+<startPos>1295</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_ESUSP_A" originalName="MIR_ESUSP_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_ESUSP_A">
+<startPos>1296</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_OSSURR_A" originalName="MIR_OSSURR_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_OSSURR_A">
+<startPos>1297</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_OSDTH_A" originalName="MIR_OSDTH_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_OSDTH_A">
+<startPos>1298</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_OSMAT_A" originalName="MIR_OSMAT_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_OSMAT_A">
+<startPos>1299</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_OSOTHR_A" originalName="MIR_OSOTHR_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_OSOTHR_A">
+<startPos>1300</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_ACCNO_TABLE_A" originalName="MIR_ACCNO_TABLE_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_ACCNO_TABLE_A">
+<startPos>1301</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_ACCNO_T_A" originalName="MIR_ACCNO_T_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_ACCNO_TABLE_A.MIR_ACCNO_T_A" minOccurs="2" maxOccurs="2">
+    <startPos>1301</startPos>
+    <bytes>2</bytes>
+    <maxBytes>2</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_ACCNO_T_A_SUB" included="Y">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_REPNO_TABLE_A" originalName="MIR_REPNO_TABLE_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_REPNO_TABLE_A">
+<startPos>1303</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_REPNO_T_A" originalName="MIR_REPNO_T_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_REPNO_TABLE_A.MIR_REPNO_T_A" minOccurs="2" maxOccurs="2">
+    <startPos>1303</startPos>
+    <bytes>2</bytes>
+    <maxBytes>2</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_REPNO_T_A_SUB" included="Y">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_DBAMT_TABLE_A" originalName="MIR_DBAMT_TABLE_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_DBAMT_TABLE_A">
+<startPos>1305</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_DBAMT_T_A" originalName="MIR_DBAMT_T_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_DBAMT_TABLE_A.MIR_DBAMT_T_A" minOccurs="2" maxOccurs="2">
+    <startPos>1305</startPos>
+    <bytes>2</bytes>
+    <maxBytes>2</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_DBAMT_T_A_SUB" included="Y">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_CRAMT_TABLE_A" originalName="MIR_CRAMT_TABLE_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_CRAMT_TABLE_A">
+<startPos>1307</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_CRAMT_T_A" originalName="MIR_CRAMT_T_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_CRAMT_TABLE_A.MIR_CRAMT_T_A" minOccurs="2" maxOccurs="2">
+    <startPos>1307</startPos>
+    <bytes>2</bytes>
+    <maxBytes>2</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_CRAMT_T_A_SUB" included="Y">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_PFKY_TABLE_A" originalName="MIR_PFKY_TABLE_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_PFKY_TABLE_A">
+<startPos>1309</startPos>
+<bytes>12</bytes>
+<maxBytes>12</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_PFKY_T_A" originalName="MIR_PFKY_T_A" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_ATTRB.MIR_PFKY_TABLE_A.MIR_PFKY_T_A" minOccurs="12" maxOccurs="12">
+    <startPos>1309</startPos>
+    <bytes>12</bytes>
+    <maxBytes>12</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_PFKY_T_A_SUB" included="Y">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                        </field>
+                        <field name="MIR_SCREEN_1_LENGTHS" originalName="MIR_SCREEN_1_LENGTHS" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS">
+                            <startPos>1321</startPos>
+                            <bytes>100</bytes>
+                            <maxBytes>100</maxBytes>
+                            <marshaller alignment="NATURAL"/>
+                            <applicationDatatype datatype="STRUCT"/>
+                            <field name="MIR_TRNID_L" originalName="MIR_TRNID_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_TRNID_L">
+<startPos>1321</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_FORCE_L" originalName="MIR_FORCE_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_FORCE_L">
+<startPos>1323</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_HDG_L" originalName="MIR_HDG_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_HDG_L">
+<startPos>1325</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_MSFLDA_L" originalName="MIR_MSFLDA_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_MSFLDA_L">
+<startPos>1327</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_MSFLDB_L" originalName="MIR_MSFLDB_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_MSFLDB_L">
+<startPos>1329</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_CMD_L" originalName="MIR_CMD_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_CMD_L">
+<startPos>1331</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_MSGE_TABLE_L" originalName="MIR_MSGE_TABLE_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_MSGE_TABLE_L">
+<startPos>1333</startPos>
+<bytes>6</bytes>
+<maxBytes>6</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_MSGE_T_L" originalName="MIR_MSGE_T_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_MSGE_TABLE_L.MIR_MSGE_T_L" minOccurs="3" maxOccurs="3">
+    <startPos>1333</startPos>
+    <bytes>6</bytes>
+    <maxBytes>6</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_MSGE_T_L_SUB" included="Y">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_IPAYE_L" originalName="MIR_IPAYE_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_IPAYE_L">
+<startPos>1339</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_VERFY_L" originalName="MIR_VERFY_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_VERFY_L">
+<startPos>1341</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_LABEL_L" originalName="MIR_LABEL_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_LABEL_L">
+<startPos>1343</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_ONAME_L" originalName="MIR_ONAME_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_ONAME_L">
+<startPos>1345</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_ACDES_L" originalName="MIR_ACDES_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_ACDES_L">
+<startPos>1347</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_IPYMT_L" originalName="MIR_IPYMT_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_IPYMT_L">
+<startPos>1349</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_TIAID_L" originalName="MIR_TIAID_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_TIAID_L">
+<startPos>1351</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_EFFDT_L" originalName="MIR_EFFDT_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_EFFDT_L">
+<startPos>1353</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_RREAS_L" originalName="MIR_RREAS_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_RREAS_L">
+<startPos>1355</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_COMIN_L" originalName="MIR_COMIN_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_COMIN_L">
+<startPos>1357</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_REGIN_L" originalName="MIR_REGIN_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_REGIN_L">
+<startPos>1359</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_POLNO_L" originalName="MIR_POLNO_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_POLNO_L">
+<startPos>1361</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_POLSF_L" originalName="MIR_POLSF_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_POLSF_L">
+<startPos>1363</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_MSCSP_L" originalName="MIR_MSCSP_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_MSCSP_L">
+<startPos>1365</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_PDFBL_L" originalName="MIR_PDFBL_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_PDFBL_L">
+<startPos>1367</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_DPOPT_L" originalName="MIR_DPOPT_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_DPOPT_L">
+<startPos>1369</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_ESUSP_L" originalName="MIR_ESUSP_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_ESUSP_L">
+<startPos>1371</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_OSSURR_L" originalName="MIR_OSSURR_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_OSSURR_L">
+<startPos>1373</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_OSDTH_L" originalName="MIR_OSDTH_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_OSDTH_L">
+<startPos>1375</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_OSMAT_L" originalName="MIR_OSMAT_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_OSMAT_L">
+<startPos>1377</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_OSOTHR_L" originalName="MIR_OSOTHR_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_OSOTHR_L">
+<startPos>1379</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_ACCNO_TABLE_L" originalName="MIR_ACCNO_TABLE_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_ACCNO_TABLE_L">
+<startPos>1381</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_ACCNO_T_L" originalName="MIR_ACCNO_T_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_ACCNO_TABLE_L.MIR_ACCNO_T_L" minOccurs="2" maxOccurs="2">
+    <startPos>1381</startPos>
+    <bytes>4</bytes>
+    <maxBytes>4</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_ACCNO_T_L_SUB" included="Y">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_REPNO_TABLE_L" originalName="MIR_REPNO_TABLE_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_REPNO_TABLE_L">
+<startPos>1385</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_REPNO_T_L" originalName="MIR_REPNO_T_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_REPNO_TABLE_L.MIR_REPNO_T_L" minOccurs="2" maxOccurs="2">
+    <startPos>1385</startPos>
+    <bytes>4</bytes>
+    <maxBytes>4</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_REPNO_T_L_SUB" included="Y">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_DBAMT_TABLE_L" originalName="MIR_DBAMT_TABLE_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_DBAMT_TABLE_L">
+<startPos>1389</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_DBAMT_T_L" originalName="MIR_DBAMT_T_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_DBAMT_TABLE_L.MIR_DBAMT_T_L" minOccurs="2" maxOccurs="2">
+    <startPos>1389</startPos>
+    <bytes>4</bytes>
+    <maxBytes>4</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_DBAMT_T_L_SUB" included="Y">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_CRAMT_TABLE_L" originalName="MIR_CRAMT_TABLE_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_CRAMT_TABLE_L">
+<startPos>1393</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_CRAMT_T_L" originalName="MIR_CRAMT_T_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_CRAMT_TABLE_L.MIR_CRAMT_T_L" minOccurs="2" maxOccurs="2">
+    <startPos>1393</startPos>
+    <bytes>4</bytes>
+    <maxBytes>4</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_CRAMT_T_L_SUB" included="Y">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_PFKY_TABLE_L" originalName="MIR_PFKY_TABLE_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_PFKY_TABLE_L">
+<startPos>1397</startPos>
+<bytes>24</bytes>
+<maxBytes>24</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_PFKY_T_L" originalName="MIR_PFKY_T_L" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_1.MIR_SCREEN_1_LENGTHS.MIR_PFKY_TABLE_L.MIR_PFKY_T_L" minOccurs="12" maxOccurs="12">
+    <startPos>1397</startPos>
+    <bytes>24</bytes>
+    <maxBytes>24</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_PFKY_T_L_SUB" included="Y">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                        </field>
+                    </field>
+                    <field name="MIR_SCREEN_2" originalName="MIR_SCREEN_2" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2" redefines="MIR_SCREEN_1">
+                        <startPos>476</startPos>
+                        <bytes>945</bytes>
+                        <maxBytes>945</maxBytes>
+                        <applicationDatatype datatype="STRUCT"/>
+                        <field name="MIR_SCREEN_2_FIELDS" originalName="MIR_SCREEN_2_FIELDS" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS">
+                            <startPos>476</startPos>
+                            <bytes>795</bytes>
+                            <maxBytes>795</maxBytes>
+                            <applicationDatatype datatype="STRUCT"/>
+                            <field name="MIR_TRNID2" originalName="MIR_TRNID2" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_TRNID2">
+<startPos>476</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_FORCE2" originalName="MIR_FORCE2" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_FORCE2">
+<startPos>480</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_HDG2" originalName="MIR_HDG2" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_HDG2">
+<startPos>481</startPos>
+<bytes>35</bytes>
+<maxBytes>35</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_MSFLDA2" originalName="MIR_MSFLDA2" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_MSFLDA2">
+<startPos>516</startPos>
+<bytes>8</bytes>
+<maxBytes>8</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_MSFLDB2" originalName="MIR_MSFLDB2" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_MSFLDB2">
+<startPos>524</startPos>
+<bytes>8</bytes>
+<maxBytes>8</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_CMD2" originalName="MIR_CMD2" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_CMD2">
+<startPos>532</startPos>
+<bytes>64</bytes>
+<maxBytes>64</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_MSGE2_TABLE" originalName="MIR_MSGE2_TABLE" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_MSGE2_TABLE">
+<startPos>596</startPos>
+<bytes>237</bytes>
+<maxBytes>237</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_MSGE2_T" originalName="MIR_MSGE2_T" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_MSGE2_TABLE.MIR_MSGE2_T" minOccurs="3" maxOccurs="3">
+    <startPos>596</startPos>
+    <bytes>237</bytes>
+    <maxBytes>237</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_MSGE2_T_SUB" included="N">
+        <bytes>79</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_IPAYE2" originalName="MIR_IPAYE2" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_IPAYE2">
+<startPos>833</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_VERFY2" originalName="MIR_VERFY2" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_VERFY2">
+<startPos>834</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_LABE2_TABLE" originalName="MIR_LABE2_TABLE" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_LABE2_TABLE">
+<startPos>835</startPos>
+<bytes>50</bytes>
+<maxBytes>50</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_LABE2_T" originalName="MIR_LABE2_T" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_LABE2_TABLE.MIR_LABE2_T" minOccurs="2" maxOccurs="2">
+    <startPos>835</startPos>
+    <bytes>50</bytes>
+    <maxBytes>50</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_LABE2_T_SUB" included="N">
+        <bytes>25</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_ONAM2_TABLE" originalName="MIR_ONAM2_TABLE" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_ONAM2_TABLE">
+<startPos>885</startPos>
+<bytes>102</bytes>
+<maxBytes>102</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_ONAM2_T" originalName="MIR_ONAM2_T" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_ONAM2_TABLE.MIR_ONAM2_T" minOccurs="2" maxOccurs="2">
+    <startPos>885</startPos>
+    <bytes>102</bytes>
+    <maxBytes>102</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_ONAM2_T_SUB" included="N">
+        <bytes>51</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_ODES2" originalName="MIR_ODES2" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_ODES2">
+<startPos>987</startPos>
+<bytes>20</bytes>
+<maxBytes>20</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_EFFDT2" originalName="MIR_EFFDT2" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_EFFDT2">
+<startPos>1007</startPos>
+<bytes>9</bytes>
+<maxBytes>9</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_POLN2_TABLE" originalName="MIR_POLN2_TABLE" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_POLN2_TABLE">
+<startPos>1016</startPos>
+<bytes>18</bytes>
+<maxBytes>18</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_POLN2_T" originalName="MIR_POLN2_T" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_POLN2_TABLE.MIR_POLN2_T" minOccurs="2" maxOccurs="2">
+    <startPos>1016</startPos>
+    <bytes>18</bytes>
+    <maxBytes>18</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_POLN2_T_SUB" included="N">
+        <bytes>9</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_POLS2_TABLE" originalName="MIR_POLS2_TABLE" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_POLS2_TABLE">
+<startPos>1034</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_POLS2_T" originalName="MIR_POLS2_T" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_POLS2_TABLE.MIR_POLS2_T" minOccurs="2" maxOccurs="2">
+    <startPos>1034</startPos>
+    <bytes>2</bytes>
+    <maxBytes>2</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_POLS2_T_SUB" included="N">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_MSCS2_TABLE" originalName="MIR_MSCS2_TABLE" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_MSCS2_TABLE">
+<startPos>1036</startPos>
+<bytes>22</bytes>
+<maxBytes>22</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_MSCS2_T" originalName="MIR_MSCS2_T" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_MSCS2_TABLE.MIR_MSCS2_T" minOccurs="2" maxOccurs="2">
+    <startPos>1036</startPos>
+    <bytes>22</bytes>
+    <maxBytes>22</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_MSCS2_T_SUB" included="N">
+        <bytes>11</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_PDFB2_TABLE" originalName="MIR_PDFB2_TABLE" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_PDFB2_TABLE">
+<startPos>1058</startPos>
+<bytes>22</bytes>
+<maxBytes>22</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_PDFB2_T" originalName="MIR_PDFB2_T" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_PDFB2_TABLE.MIR_PDFB2_T" minOccurs="2" maxOccurs="2">
+    <startPos>1058</startPos>
+    <bytes>22</bytes>
+    <maxBytes>22</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_PDFB2_T_SUB" included="N">
+        <bytes>11</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_DPOP2_TABLE" originalName="MIR_DPOP2_TABLE" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_DPOP2_TABLE">
+<startPos>1080</startPos>
+<bytes>22</bytes>
+<maxBytes>22</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_DPOP2_T" originalName="MIR_DPOP2_T" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_DPOP2_TABLE.MIR_DPOP2_T" minOccurs="2" maxOccurs="2">
+    <startPos>1080</startPos>
+    <bytes>22</bytes>
+    <maxBytes>22</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_DPOP2_T_SUB" included="N">
+        <bytes>11</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_ESUS2_TABLE" originalName="MIR_ESUS2_TABLE" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_ESUS2_TABLE">
+<startPos>1102</startPos>
+<bytes>22</bytes>
+<maxBytes>22</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_ESUS2_T" originalName="MIR_ESUS2_T" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_ESUS2_TABLE.MIR_ESUS2_T" minOccurs="2" maxOccurs="2">
+    <startPos>1102</startPos>
+    <bytes>22</bytes>
+    <maxBytes>22</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_ESUS2_T_SUB" included="N">
+        <bytes>11</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_OSUR2_TABLE" originalName="MIR_OSUR2_TABLE" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_OSUR2_TABLE">
+<startPos>1124</startPos>
+<bytes>22</bytes>
+<maxBytes>22</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_OSUR2_T" originalName="MIR_OSUR2_T" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_OSUR2_TABLE.MIR_OSUR2_T" minOccurs="2" maxOccurs="2">
+    <startPos>1124</startPos>
+    <bytes>22</bytes>
+    <maxBytes>22</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_OSUR2_T_SUB" included="N">
+        <bytes>11</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_ODTH2_TABLE" originalName="MIR_ODTH2_TABLE" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_ODTH2_TABLE">
+<startPos>1146</startPos>
+<bytes>22</bytes>
+<maxBytes>22</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_ODTH2_T" originalName="MIR_ODTH2_T" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_ODTH2_TABLE.MIR_ODTH2_T" minOccurs="2" maxOccurs="2">
+    <startPos>1146</startPos>
+    <bytes>22</bytes>
+    <maxBytes>22</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_ODTH2_T_SUB" included="N">
+        <bytes>11</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_OMAT2_TABLE" originalName="MIR_OMAT2_TABLE" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_OMAT2_TABLE">
+<startPos>1168</startPos>
+<bytes>22</bytes>
+<maxBytes>22</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_OMAT2_T" originalName="MIR_OMAT2_T" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_OMAT2_TABLE.MIR_OMAT2_T" minOccurs="2" maxOccurs="2">
+    <startPos>1168</startPos>
+    <bytes>22</bytes>
+    <maxBytes>22</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_OMAT2_T_SUB" included="N">
+        <bytes>11</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_OOTH2_TABLE" originalName="MIR_OOTH2_TABLE" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_OOTH2_TABLE">
+<startPos>1190</startPos>
+<bytes>22</bytes>
+<maxBytes>22</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_OOTH2_T" originalName="MIR_OOTH2_T" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_OOTH2_TABLE.MIR_OOTH2_T" minOccurs="2" maxOccurs="2">
+    <startPos>1190</startPos>
+    <bytes>22</bytes>
+    <maxBytes>22</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_OOTH2_T_SUB" included="N">
+        <bytes>11</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_NSUS" originalName="MIR_NSUS" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_NSUS">
+<startPos>1212</startPos>
+<bytes>11</bytes>
+<maxBytes>11</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_PFKY2_TABLE" originalName="MIR_PFKY2_TABLE" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_PFKY2_TABLE">
+<startPos>1223</startPos>
+<bytes>48</bytes>
+<maxBytes>48</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_PFKY2_T" originalName="MIR_PFKY2_T" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_FIELDS.MIR_PFKY2_TABLE.MIR_PFKY2_T" minOccurs="12" maxOccurs="12">
+    <startPos>1223</startPos>
+    <bytes>48</bytes>
+    <maxBytes>48</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_PFKY2_T_SUB" included="N">
+        <bytes>4</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                        </field>
+                        <field name="MIR_SCREEN_2_ATTRB" originalName="MIR_SCREEN_2_ATTRB" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB">
+                            <startPos>1271</startPos>
+                            <bytes>50</bytes>
+                            <maxBytes>50</maxBytes>
+                            <applicationDatatype datatype="STRUCT"/>
+                            <field name="MIR_TRNID2_A" originalName="MIR_TRNID2_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_TRNID2_A">
+<startPos>1271</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_FORCE2_A" originalName="MIR_FORCE2_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_FORCE2_A">
+<startPos>1272</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_HDG2_A" originalName="MIR_HDG2_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_HDG2_A">
+<startPos>1273</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_MSFLDA2_A" originalName="MIR_MSFLDA2_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_MSFLDA2_A">
+<startPos>1274</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_MSFLDB2_A" originalName="MIR_MSFLDB2_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_MSFLDB2_A">
+<startPos>1275</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_CMD2_A" originalName="MIR_CMD2_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_CMD2_A">
+<startPos>1276</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_MSGE2_TABLE_A" originalName="MIR_MSGE2_TABLE_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_MSGE2_TABLE_A">
+<startPos>1277</startPos>
+<bytes>3</bytes>
+<maxBytes>3</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_MSGE2_T_A" originalName="MIR_MSGE2_T_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_MSGE2_TABLE_A.MIR_MSGE2_T_A" minOccurs="3" maxOccurs="3">
+    <startPos>1277</startPos>
+    <bytes>3</bytes>
+    <maxBytes>3</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_MSGE2_T_A_SUB" included="N">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_IPAYE2_A" originalName="MIR_IPAYE2_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_IPAYE2_A">
+<startPos>1280</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_VERFY2_A" originalName="MIR_VERFY2_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_VERFY2_A">
+<startPos>1281</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_LABE2_TABLE_A" originalName="MIR_LABE2_TABLE_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_LABE2_TABLE_A">
+<startPos>1282</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_LABE2_T_A" originalName="MIR_LABE2_T_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_LABE2_TABLE_A.MIR_LABE2_T_A" minOccurs="2" maxOccurs="2">
+    <startPos>1282</startPos>
+    <bytes>2</bytes>
+    <maxBytes>2</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_LABE2_T_A_SUB" included="N">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_ONAM2_TABLE_A" originalName="MIR_ONAM2_TABLE_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_ONAM2_TABLE_A">
+<startPos>1284</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_ONAM2_T_A" originalName="MIR_ONAM2_T_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_ONAM2_TABLE_A.MIR_ONAM2_T_A" minOccurs="2" maxOccurs="2">
+    <startPos>1284</startPos>
+    <bytes>2</bytes>
+    <maxBytes>2</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_ONAM2_T_A_SUB" included="N">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_ODES2_A" originalName="MIR_ODES2_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_ODES2_A">
+<startPos>1286</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_EFFDT2_A" originalName="MIR_EFFDT2_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_EFFDT2_A">
+<startPos>1287</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_POLN2_TABLE_A" originalName="MIR_POLN2_TABLE_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_POLN2_TABLE_A">
+<startPos>1288</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_POLN2_T_A" originalName="MIR_POLN2_T_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_POLN2_TABLE_A.MIR_POLN2_T_A" minOccurs="2" maxOccurs="2">
+    <startPos>1288</startPos>
+    <bytes>2</bytes>
+    <maxBytes>2</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_POLN2_T_A_SUB" included="N">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_POLS2_TABLE_A" originalName="MIR_POLS2_TABLE_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_POLS2_TABLE_A">
+<startPos>1290</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_POLS2_T_A" originalName="MIR_POLS2_T_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_POLS2_TABLE_A.MIR_POLS2_T_A" minOccurs="2" maxOccurs="2">
+    <startPos>1290</startPos>
+    <bytes>2</bytes>
+    <maxBytes>2</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_POLS2_T_A_SUB" included="N">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_MSCS2_TABLE_A" originalName="MIR_MSCS2_TABLE_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_MSCS2_TABLE_A">
+<startPos>1292</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_MSCS2_T_A" originalName="MIR_MSCS2_T_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_MSCS2_TABLE_A.MIR_MSCS2_T_A" minOccurs="2" maxOccurs="2">
+    <startPos>1292</startPos>
+    <bytes>2</bytes>
+    <maxBytes>2</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_MSCS2_T_A_SUB" included="N">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_PDFB2_TABLE_A" originalName="MIR_PDFB2_TABLE_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_PDFB2_TABLE_A">
+<startPos>1294</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_PDFB2_T_A" originalName="MIR_PDFB2_T_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_PDFB2_TABLE_A.MIR_PDFB2_T_A" minOccurs="2" maxOccurs="2">
+    <startPos>1294</startPos>
+    <bytes>2</bytes>
+    <maxBytes>2</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_PDFB2_T_A_SUB" included="N">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_DPOP2_TABLE_A" originalName="MIR_DPOP2_TABLE_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_DPOP2_TABLE_A">
+<startPos>1296</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_DPOP2_T_A" originalName="MIR_DPOP2_T_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_DPOP2_TABLE_A.MIR_DPOP2_T_A" minOccurs="2" maxOccurs="2">
+    <startPos>1296</startPos>
+    <bytes>2</bytes>
+    <maxBytes>2</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_DPOP2_T_A_SUB" included="N">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_ESUS2_TABLE_A" originalName="MIR_ESUS2_TABLE_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_ESUS2_TABLE_A">
+<startPos>1298</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_ESUS2_T_A" originalName="MIR_ESUS2_T_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_ESUS2_TABLE_A.MIR_ESUS2_T_A" minOccurs="2" maxOccurs="2">
+    <startPos>1298</startPos>
+    <bytes>2</bytes>
+    <maxBytes>2</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_ESUS2_T_A_SUB" included="N">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_OSUR2_TABLE_A" originalName="MIR_OSUR2_TABLE_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_OSUR2_TABLE_A">
+<startPos>1300</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_OSUR2_T_A" originalName="MIR_OSUR2_T_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_OSUR2_TABLE_A.MIR_OSUR2_T_A" minOccurs="2" maxOccurs="2">
+    <startPos>1300</startPos>
+    <bytes>2</bytes>
+    <maxBytes>2</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_OSUR2_T_A_SUB" included="N">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_ODTH2_TABLE_A" originalName="MIR_ODTH2_TABLE_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_ODTH2_TABLE_A">
+<startPos>1302</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_ODTH2_T_A" originalName="MIR_ODTH2_T_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_ODTH2_TABLE_A.MIR_ODTH2_T_A" minOccurs="2" maxOccurs="2">
+    <startPos>1302</startPos>
+    <bytes>2</bytes>
+    <maxBytes>2</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_ODTH2_T_A_SUB" included="N">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_OMAT2_TABLE_A" originalName="MIR_OMAT2_TABLE_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_OMAT2_TABLE_A">
+<startPos>1304</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_OMAT2_T_A" originalName="MIR_OMAT2_T_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_OMAT2_TABLE_A.MIR_OMAT2_T_A" minOccurs="2" maxOccurs="2">
+    <startPos>1304</startPos>
+    <bytes>2</bytes>
+    <maxBytes>2</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_OMAT2_T_A_SUB" included="N">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_OOTH2_TABLE_A" originalName="MIR_OOTH2_TABLE_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_OOTH2_TABLE_A">
+<startPos>1306</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_OOTH2_T_A" originalName="MIR_OOTH2_T_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_OOTH2_TABLE_A.MIR_OOTH2_T_A" minOccurs="2" maxOccurs="2">
+    <startPos>1306</startPos>
+    <bytes>2</bytes>
+    <maxBytes>2</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_OOTH2_T_A_SUB" included="N">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_NSUS_A" originalName="MIR_NSUS_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_NSUS_A">
+<startPos>1308</startPos>
+<bytes>1</bytes>
+<maxBytes>1</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="MIR_PFKY2_TABLE_A" originalName="MIR_PFKY2_TABLE_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_PFKY2_TABLE_A">
+<startPos>1309</startPos>
+<bytes>12</bytes>
+<maxBytes>12</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_PFKY2_T_A" originalName="MIR_PFKY2_T_A" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_ATTRB.MIR_PFKY2_TABLE_A.MIR_PFKY2_T_A" minOccurs="12" maxOccurs="12">
+    <startPos>1309</startPos>
+    <bytes>12</bytes>
+    <maxBytes>12</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_PFKY2_T_A_SUB" included="N">
+        <bytes>1</bytes>
+        <applicationDatatype datatype="CHAR"/>
+    </field>
+</field>
+                            </field>
+                        </field>
+                        <field name="MIR_SCREEN_2_LENGTHS" originalName="MIR_SCREEN_2_LENGTHS" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS">
+                            <startPos>1321</startPos>
+                            <bytes>100</bytes>
+                            <maxBytes>100</maxBytes>
+                            <marshaller alignment="NATURAL"/>
+                            <applicationDatatype datatype="STRUCT"/>
+                            <field name="MIR_TRNID2_L" originalName="MIR_TRNID2_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_TRNID2_L">
+<startPos>1321</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_FORCE2_L" originalName="MIR_FORCE2_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_FORCE2_L">
+<startPos>1323</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_HDG2_L" originalName="MIR_HDG2_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_HDG2_L">
+<startPos>1325</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_MSFLDA2_L" originalName="MIR_MSFLDA2_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_MSFLDA2_L">
+<startPos>1327</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_MSFLDB2_L" originalName="MIR_MSFLDB2_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_MSFLDB2_L">
+<startPos>1329</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_CMD2_L" originalName="MIR_CMD2_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_CMD2_L">
+<startPos>1331</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_MSGE2_TABLE_L" originalName="MIR_MSGE2_TABLE_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_MSGE2_TABLE_L">
+<startPos>1333</startPos>
+<bytes>6</bytes>
+<maxBytes>6</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_MSGE2_T_L" originalName="MIR_MSGE2_T_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_MSGE2_TABLE_L.MIR_MSGE2_T_L" minOccurs="3" maxOccurs="3">
+    <startPos>1333</startPos>
+    <bytes>6</bytes>
+    <maxBytes>6</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_MSGE2_T_L_SUB" included="N">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_IPAYE2_L" originalName="MIR_IPAYE2_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_IPAYE2_L">
+<startPos>1339</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_VERFY2_L" originalName="MIR_VERFY2_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_VERFY2_L">
+<startPos>1341</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_LABE2_TABLE_L" originalName="MIR_LABE2_TABLE_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_LABE2_TABLE_L">
+<startPos>1343</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_LABE2_T_L" originalName="MIR_LABE2_T_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_LABE2_TABLE_L.MIR_LABE2_T_L" minOccurs="2" maxOccurs="2">
+    <startPos>1343</startPos>
+    <bytes>4</bytes>
+    <maxBytes>4</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_LABE2_T_L_SUB" included="N">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_ONAM2_TABLE_L" originalName="MIR_ONAM2_TABLE_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_ONAM2_TABLE_L">
+<startPos>1347</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_ONAM2_T_L" originalName="MIR_ONAM2_T_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_ONAM2_TABLE_L.MIR_ONAM2_T_L" minOccurs="2" maxOccurs="2">
+    <startPos>1347</startPos>
+    <bytes>4</bytes>
+    <maxBytes>4</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_ONAM2_T_L_SUB" included="N">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_ODES2_L" originalName="MIR_ODES2_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_ODES2_L">
+<startPos>1351</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_EFFDT2_L" originalName="MIR_EFFDT2_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_EFFDT2_L">
+<startPos>1353</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_POLN2_TABLE_L" originalName="MIR_POLN2_TABLE_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_POLN2_TABLE_L">
+<startPos>1355</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_POLN2_T_L" originalName="MIR_POLN2_T_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_POLN2_TABLE_L.MIR_POLN2_T_L" minOccurs="2" maxOccurs="2">
+    <startPos>1355</startPos>
+    <bytes>4</bytes>
+    <maxBytes>4</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_POLN2_T_L_SUB" included="N">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_POLS2_TABLE_L" originalName="MIR_POLS2_TABLE_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_POLS2_TABLE_L">
+<startPos>1359</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_POLS2_T_L" originalName="MIR_POLS2_T_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_POLS2_TABLE_L.MIR_POLS2_T_L" minOccurs="2" maxOccurs="2">
+    <startPos>1359</startPos>
+    <bytes>4</bytes>
+    <maxBytes>4</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_POLS2_T_L_SUB" included="N">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_MSCS2_TABLE_L" originalName="MIR_MSCS2_TABLE_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_MSCS2_TABLE_L">
+<startPos>1363</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_MSCS2_T_L" originalName="MIR_MSCS2_T_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_MSCS2_TABLE_L.MIR_MSCS2_T_L" minOccurs="2" maxOccurs="2">
+    <startPos>1363</startPos>
+    <bytes>4</bytes>
+    <maxBytes>4</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_MSCS2_T_L_SUB" included="N">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_PDFB2_TABLE_L" originalName="MIR_PDFB2_TABLE_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_PDFB2_TABLE_L">
+<startPos>1367</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_PDFB2_T_L" originalName="MIR_PDFB2_T_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_PDFB2_TABLE_L.MIR_PDFB2_T_L" minOccurs="2" maxOccurs="2">
+    <startPos>1367</startPos>
+    <bytes>4</bytes>
+    <maxBytes>4</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_PDFB2_T_L_SUB" included="N">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_DPOP2_TABLE_L" originalName="MIR_DPOP2_TABLE_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_DPOP2_TABLE_L">
+<startPos>1371</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_DPOP2_T_L" originalName="MIR_DPOP2_T_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_DPOP2_TABLE_L.MIR_DPOP2_T_L" minOccurs="2" maxOccurs="2">
+    <startPos>1371</startPos>
+    <bytes>4</bytes>
+    <maxBytes>4</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_DPOP2_T_L_SUB" included="N">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_ESUS2_TABLE_L" originalName="MIR_ESUS2_TABLE_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_ESUS2_TABLE_L">
+<startPos>1375</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_ESUS2_T_L" originalName="MIR_ESUS2_T_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_ESUS2_TABLE_L.MIR_ESUS2_T_L" minOccurs="2" maxOccurs="2">
+    <startPos>1375</startPos>
+    <bytes>4</bytes>
+    <maxBytes>4</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_ESUS2_T_L_SUB" included="N">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_OSUR2_TABLE_L" originalName="MIR_OSUR2_TABLE_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_OSUR2_TABLE_L">
+<startPos>1379</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_OSUR2_T_L" originalName="MIR_OSUR2_T_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_OSUR2_TABLE_L.MIR_OSUR2_T_L" minOccurs="2" maxOccurs="2">
+    <startPos>1379</startPos>
+    <bytes>4</bytes>
+    <maxBytes>4</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_OSUR2_T_L_SUB" included="N">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_ODTH2_TABLE_L" originalName="MIR_ODTH2_TABLE_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_ODTH2_TABLE_L">
+<startPos>1383</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_ODTH2_T_L" originalName="MIR_ODTH2_T_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_ODTH2_TABLE_L.MIR_ODTH2_T_L" minOccurs="2" maxOccurs="2">
+    <startPos>1383</startPos>
+    <bytes>4</bytes>
+    <maxBytes>4</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_ODTH2_T_L_SUB" included="N">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_OMAT2_TABLE_L" originalName="MIR_OMAT2_TABLE_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_OMAT2_TABLE_L">
+<startPos>1387</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_OMAT2_T_L" originalName="MIR_OMAT2_T_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_OMAT2_TABLE_L.MIR_OMAT2_T_L" minOccurs="2" maxOccurs="2">
+    <startPos>1387</startPos>
+    <bytes>4</bytes>
+    <maxBytes>4</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_OMAT2_T_L_SUB" included="N">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_OOTH2_TABLE_L" originalName="MIR_OOTH2_TABLE_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_OOTH2_TABLE_L">
+<startPos>1391</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_OOTH2_T_L" originalName="MIR_OOTH2_T_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_OOTH2_TABLE_L.MIR_OOTH2_T_L" minOccurs="2" maxOccurs="2">
+    <startPos>1391</startPos>
+    <bytes>4</bytes>
+    <maxBytes>4</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_OOTH2_T_L_SUB" included="N">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                            <field name="MIR_NSUS_L" originalName="MIR_NSUS_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_NSUS_L">
+<startPos>1395</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<marshaller isNativeInteger="N" alignment="NATURAL"/>
+<applicationDatatype datatype="SHORT" precision="4"/>
+                            </field>
+                            <field name="MIR_PFKY2_TABLE_L" originalName="MIR_PFKY2_TABLE_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_PFKY2_TABLE_L">
+<startPos>1397</startPos>
+<bytes>24</bytes>
+<maxBytes>24</maxBytes>
+<applicationDatatype datatype="STRUCT"/>
+<field name="MIR_PFKY2_T_L" originalName="MIR_PFKY2_T_L" included="N" path="NCWM0670.MIR_MAP_INTERFACE.MIR_SCREEN_2.MIR_SCREEN_2_LENGTHS.MIR_PFKY2_TABLE_L.MIR_PFKY2_T_L" minOccurs="12" maxOccurs="12">
+    <startPos>1397</startPos>
+    <bytes>24</bytes>
+    <maxBytes>24</maxBytes>
+    <applicationDatatype datatype="ARRAY"/>
+    <field name="MIR_PFKY2_T_L_SUB" included="N">
+        <bytes>2</bytes>
+        <marshaller isNativeInteger="N" alignment="NATURAL"/>
+        <applicationDatatype datatype="SHORT" precision="4"/>
+    </field>
+</field>
+                            </field>
+                        </field>
+                    </field>
+                </field>
+            </field>
+        </segment>
+    </message>
+</ns2:message>
