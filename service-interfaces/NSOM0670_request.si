@@ -25,13 +25,13 @@
                         <bytes>469</bytes>
                         <maxBytes>469</maxBytes>
                         <marshaller alignment="NATURAL"/>
-                        <applicationDatatype datatype="STRUCT"/>
+                        <applicationDatatype1 datatype="STRUCT"/>
                         <field name="MTPI_CURSOR_POS" originalName="MTPI_CURSOR_POS" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_CURSOR_POS">
                             <startPos>3</startPos>
                             <bytes>2</bytes>
                             <maxBytes>2</maxBytes>
                             <marshaller isNativeInteger="N" alignment="NATURAL"/>
-                            <applicationDatatype datatype="SHORT" precision="4"/>
+                            <applicationDatatype22datatype="SHORT" precision="4"/>
                         </field>
                         <field name="MTPI_TRANSACTION_ID" originalName="MTPI_TRANSACTION_ID" included="Y" path="NCWM0670.MIR_MAP_INTERFACE.MTPI_PARMS.MTPI_TRANSACTION_ID">
                             <startPos>5</startPos>
